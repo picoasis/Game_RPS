@@ -1,0 +1,94 @@
+/************设置默认CSS************/
+/*-----------清除默认CSS-----------*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+/************设置具体属性************/
+/*----------设置整体属性----------*/
+body{
+    color:#000000;
+    background-color:#000000;
+    font-size:16px;
+    font-family: 方正舒体 ,宋体;
+}
+img{/*提前告知图片要占的空间*/
+    width:168px;
+    height:133px;
+}
+#part_3 img{
+    width:72px;
+    height:auto;/*不推荐，用于约束图片大小*/
+    margin:0;
+}
+/*------------------游戏盒子----------------------*/
+div#container{
+    width:700px;
+    /*height:350px;!*50px+133+25+57+50=315+35*!*/
+    /*border:black solid 2px;*/
+    background-color: #ffffff;
+    margin: 40px auto auto auto;/*定位*/
+}
+/*----第一部分：次数统计-----*/
+div#part_1{
+    height:30px;
+    line-height: 20px;
+    /*border:blueviolet solid 1px;*/
+}
+div#part_1 p{
+    line-height: 30px;
+    width:200px;
+    float: right;
+    font-family: 宋体;
+    /*border:red solid;*/
+}
+
+/*----第二部分：对战显示-----*/
+div#part_2{
+    height:223px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+div#part_2 p{
+    line-height:30px;
+}
+div#playerShow,#pcShow,#resultShow{
+    display:inline;
+    float: left;
+}
+div#playerShow,#pcShow{
+    font-family: 宋体;
+    width:168px;
+    height:163px;
+}
+div#playerShow{
+    margin-left: 132px;
+}
+div#resultShow{
+    font-size: 25px;
+    color: #dc143c;
+    width: 100px;
+    height:133px;
+    margin-top:30px;
+    padding:45px auto;
+}
+
+/*----第三部分：玩家选择-----*/
+div#part_3{
+    width:700px;
+    height:122px;
+    padding-bottom: 30px;
+    /*border:red solid;*/
+    text-align: center;
+}
+div#part_3 p{
+    height:35px;
+    font-size:25px;
+}
+div#part_3 img:hover{
+    border:darkblue solid;
+}

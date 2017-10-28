@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"> </script>
+</head>
+<body>
+
+<div id="container">
+    <!--第一部分:结果统计-->
+    <div id="part_1">
+        <p id="winTimeShow">您已获胜了 <span id="countTime">0</span> / <span id="allTimes"> 0</span> 次。</p>
+    </div>
+
+
+    <!--第二部分：对战展示-->
+    <div id="part_2">
+        <div id="playerShow">
+            <!--玩家部分-->
+            <p>玩家</p>
+            <img id="playerResult" alt="玩家选择" src="images/jiandao.gif"/>
+        </div>
+        <div id="resultShow">
+            <!--展示当局的结果-->
+            <p id="result" class="inLine"> 平 </p>
+        </div>
+        <div id="pcShow">
+            <!--电脑部分-->
+            <p >电脑</p>
+            <img id="pcResult"  alt="电脑选择" src="images/jiandao.gif"/>
+        </div>
+    </div>
+
+    <!--第三部分：玩家选择-->
+    <div id="part_3">
+        <p>请出拳吧，少年！</p>
+        <img class="choices"  id="shiTou" src="images/shitou.gif" alt="石头" /><img id="jiandao" class="choices"  src="images/jiandao.gif" /><img id="bu" class="choices"  src="images/bu.gif" />
+    </div>
+
+</div>
+</body>
+</html>
+<!--如何消除img间的默认间隙
+方案一:div{font-size:0};
+方案二:img{ display:block};
+方案三:img{vertical-align:top;}
+方案四：div{ margin-bottom:-3px };
+ 1.为什么img标签上下会有间隙？。
+根本原因在于img标签为inline元素，该元素默认垂直对齐方式为以父元素的baseline，但是展示时又是以bottomline为对齐方式，因此造成了上下两个img标签之间的间隙。
+2.如何解决？
+（1）img{ display:block};
+       将其改变为block元素，但是该方法太过粗暴，相当于从根本上改变了img。
+（2）img{vertical-align:top;}
+       改变其垂直对齐方式
+（3）div{font-size:0};
+      把父元素的文字大小设置为0
+（4）div{ margin-bottom:-3px };
+        这个方法不推荐-->
